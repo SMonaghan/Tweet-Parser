@@ -7,13 +7,21 @@ For this to work, you have to supply the following information, in a file called
 
 #Information to provide
 substrings = ['email@email.com', 'Other string to find']
+
 key ='twitter consumer key here'
+
 secret_key ='twitter secret consumer key'
+
 token ='twitter access token'
+
 token_secret ='twitter secret access token'
+
 fromaddr = 'email to send from'
+
 toaddrs  = 'email to send to'
+
 username = 'email to send from'
+
 password = 'password of the from email'
 
 #Note
