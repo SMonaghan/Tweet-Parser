@@ -27,14 +27,13 @@ class MyStreamer(TwythonStreamer):
 	    month = int(time.month)
 	    year = int(time.year)
 	    found_info = "file_%i_%i_%i_%s.txt" % (month, day, year,timeofday)
-	    print found_info
 	    fp = open(found_info, "w")
-	    fp.write(html);
-	    fp.close()
 	    for substring in substrings:
 		print substring
 		if substring in html:
-		    msg = "\r\n".join([
+		   fp.write(html);
+	    	   fp.close()
+		   msg = "\r\n".join([
 		        "From: %s" % fromaddr,
 		        "To: %s" % toaddrs,
 		        "Subject: Just a message",
